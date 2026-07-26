@@ -1,0 +1,15 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: dotproduct.xyz
+  https: true
+  tls_cert_error: '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch,
+    certificate is not valid for ''dotproduct.'
+  hsts: null
+domains:
+- domain: dotproduct.xyz
+  dnssec: true
+  caa: []
+  spf: false
+  dmarc: false

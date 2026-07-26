@@ -1,8 +1,26 @@
 aid: dot-product
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dot-product.png
 name: Dot Product
-description: 'Dot Product is a company surfaced as a portfolio company of index-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Dot Product is a San Francisco AI startup founded in 2024 by Usman Masood (former CTO
+  of Pipe and engineering manager at Stripe) and Maksim Stepanenko (previously at Coinbase, Primer,
+  Locu, and the MIT Media Lab). The company builds "Operator," a platform of voice-first AI coworkers
+  (agents) for operations and customer-support teams: AI agents that follow company-specific playbooks,
+  provide 24/7 phone/voice support, and scale to fluctuating demand as an alternative to traditional
+  call centers. Dot Product raised a $6M seed round led by Index Ventures with participation from Lachy
+  Groom. As of this enrichment pass the company operates in stealth: the product surface (operator.xyz)
+  does not resolve publicly and dotproduct.xyz is parked, so no public API, developer docs, SDKs, or
+  machine-readable specifications could be verified. Sector: ai-ml.'
 url: https://raw.githubusercontent.com/api-evangelist/dot-product/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai Ml
+- Artificial Intelligence
+- Voice Agents
+- Customer Support
+- Operations
+- AI Agents
+- Conversational AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dot-product-domain-security.yml
 - type: Website
   url: https://dotproduct.xyz/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
